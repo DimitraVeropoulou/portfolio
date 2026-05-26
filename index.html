@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Geo Portfolio</title>
+  <meta name="description" content="Portfolio of a Geo-Information Sciences graduate researcher focused on agricultural remote sensing, sugarcane monitoring, and geospatial machine learning in East and Southern Africa." />
+  <meta property="og:title" content="Geo Portfolio" />
+  <meta property="og:description" content="Agricultural remote sensing, geospatial analysis, and machine learning for crop monitoring and harvest prediction." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts -->
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700&f[]=zodiak@400,700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Icons (loaded early, initialised in script.js after window load) -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============================================================
+       HEADER
+  ============================================================ -->
+  <header class="site-header">
+    <div class="container nav">
+
+      <a class="brand" href="#top" aria-label="Go to top of portfolio">
+        <span class="brand-mark" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+               role="img" aria-label="Geo portfolio logo">
+            <path d="M5 8.5 12 4l7 4.5v7L12 20l-7-4.5v-7Z"></path>
+            <path d="M8.2 10.1 12 7.9l3.8 2.2v3.9L12 16.1l-3.8-2.1v-3.9Z"></path>
+          </svg>
+        </span>
+        <span>Geo Portfolio</span>
+      </a>
+
+      <nav class="nav-links" id="nav-links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#writing">Writing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme"></button>
+        <button class="menu-toggle" type="button" aria-expanded="false"
+                aria-controls="nav-links" aria-label="Open menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ============================================================
+       MAIN CONTENT
+  ============================================================ -->
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero section" id="top">
+      <div class="container hero-grid">
+
+        <div class="hero-copy reveal">
+          <span class="eyebrow">Geo-Information Sciences · Remote sensing</span>
+          <h1>Satellite-based crop intelligence for African agriculture.</h1>
+          <p>
+            I build geospatial workflows for sugarcane monitoring, harvest prediction,
+            and land-cover analysis using Sentinel-2 imagery, climate data, and machine learning.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View projects</a>
+            <a class="btn btn-secondary" href="#contact">Contact me</a>
+          </div>
+        </div>
+
+        <aside class="hero-card reveal" aria-label="Research overview card">
+          <div class="map-grid" aria-hidden="true">
+            <span style="--i:1"></span><span style="--i:2"></span>
+            <span style="--i:3"></span><span style="--i:4"></span>
+            <span style="--i:5"></span><span style="--i:6"></span>
+            <span style="--i:7"></span><span style="--i:8"></span>
+            <span style="--i:9"></span><span style="--i:10"></span>
+            <span style="--i:11"></span><span style="--i:12"></span>
+            <span style="--i:13"></span><span style="--i:14"></span>
+            <span style="--i:15"></span><span style="--i:16"></span>
+          </div>
+          <p style="color: var(--color-text); max-width: 32ch;">
+            Current focus: reproducible remote sensing pipelines for sugarcane monitoring
+            in East and Southern Africa, combining image compositing, vegetation metrics,
+            and predictive modeling.
+          </p>
+          <div class="hero-stats">
+            <div class="stat">
+              <strong>Sentinel-2</strong>
+              <span>Optical time-series, indices, and compositing</span>
+            </div>
+            <div class="stat">
+              <strong>R + GEE</strong>
+              <span>Analysis pipelines, modeling, and visualization</span>
+            </div>
+            <div class="stat">
+              <strong>Mozambique</strong>
+              <span>Study areas across Chokwe, Xai-Xai, Catandica, and Gorongosa</span>
+            </div>
+            <div class="stat">
+              <strong>Applied ML</strong>
+              <span>Random Forest workflows for classification and prediction</span>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <div>
+            <span class="eyebrow">About</span>
+            <h2>Research-driven, code-first, and focused on useful spatial evidence.</h2>
+          </div>
+          <p>
+            I am an MSc Geo-Information Sciences student working on agricultural remote sensing,
+            with a strong focus on turning satellite imagery into practical insights for crop
+            monitoring, harvest prediction, and decision support.
+          </p>
+        </div>
+
+        <div class="about-layout">
+          <article class="about-note reveal">
+            <p>
+              My work sits at the intersection of geospatial science, agronomy, and data analysis.
+              I work comfortably across R, Python, QGIS, and Google Earth Engine, and I care
+              deeply about workflows that are robust, reproducible, and interpretable.
+            </p>
+            <p>
+              Most of my recent projects center on sugarcane systems in Sub-Saharan Africa, where
+              I use Sentinel-2 imagery, cloud masking, vegetation indices, and machine learning to
+              understand crop condition and support harvest planning.
+            </p>
+            <p>
+              Beyond research, I enjoy building clean data pipelines, documenting methods clearly,
+              and translating technical outputs into visuals and summaries that collaborators can
+              actually use.
+            </p>
+          </article>
+
+          <aside class="timeline reveal" aria-label="Experience timeline">
+            <div class="timeline-item">
+              <span class="dot" aria-hidden="true"></span>
+              <div>
+                <h3>MSc Geo-Information Sciences</h3>
+                <p>Graduate research in agricultural remote sensing and geospatial data science.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="dot" aria-hidden="true"></span>
+              <div>
+                <h3>SmartCane project work</h3>
+                <p>Harvest prediction and sugarcane monitoring with Sentinel-2 and climate information.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="dot" aria-hidden="true"></span>
+              <div>
+                <h3>Land-cover classification research</h3>
+                <p>Random Forest modeling and accuracy assessment across multiple Mozambican study areas.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="dot" aria-hidden="true"></span>
+              <div>
+                <h3>Applied environmental analysis</h3>
+                <p>Experimental research support, statistical analysis, and technical communication.</p>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <div>
+            <span class="eyebrow">Skills</span>
+            <h2>Methods and tools I use most.</h2>
+          </div>
+          <p>
+            My stack is centered on geospatial analysis, satellite image processing,
+            reproducible research, and machine learning for agricultural monitoring.
+          </p>
+        </div>
+
+        <div class="skills-layout">
+          <section class="skill-group reveal">
+            <h3>Remote sensing</h3>
+            <div class="chip-list">
+              <span class="chip">Sentinel-2</span>
+              <span class="chip">Vegetation indices</span>
+              <span class="chip">Cloud masking</span>
+              <span class="chip">Image compositing</span>
+              <span class="chip">Time series</span>
+              <span class="chip">Spectral analysis</span>
+            </div>
+          </section>
+          <section class="skill-group reveal">
+            <h3>Geospatial analysis</h3>
+            <div class="chip-list">
+              <span class="chip">R</span>
+              <span class="chip">terra</span>
+              <span class="chip">sf</span>
+              <span class="chip">QGIS</span>
+              <span class="chip">ArcGIS Pro</span>
+              <span class="chip">Google Earth Engine</span>
+            </div>
+          </section>
+          <section class="skill-group reveal">
+            <h3>Modeling and workflow</h3>
+            <div class="chip-list">
+              <span class="chip">Random Forest</span>
+              <span class="chip">Prediction pipelines</span>
+              <span class="chip">Accuracy assessment</span>
+              <span class="chip">GitHub</span>
+              <span class="chip">VS Code</span>
+              <span class="chip">Markdown</span>
+            </div>
+          </section>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <div>
+            <span class="eyebrow">Projects</span>
+            <h2>Selected work in crop monitoring and geospatial modeling.</h2>
+          </div>
+          <p>
+            These cards are written to be easy to swap with your exact repository links,
+            figures, and metrics once you want to publish the final version.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+
+          <article class="project-card reveal">
+            <div class="project-visual" aria-hidden="true">
+              <div class="mini-map"></div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">SmartCane · harvest prediction</div>
+              <h3>Sugarcane harvest prediction using Sentinel-2 and climate data</h3>
+              <p>Built a workflow for linking optical satellite observations and environmental
+                 variables to harvest timing and crop status in operational sugarcane systems.</p>
+              <div class="project-tags">
+                <span>Sentinel-2</span><span>R</span><span>Time series</span><span>Prediction</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-visual" aria-hidden="true">
+              <div class="mini-chart">
+                <svg viewBox="0 0 320 180" fill="none">
+                  <path d="M20 145 C55 138, 70 122, 100 116 S150 96, 176 101 S230 80, 256 65 S296 42, 302 38"
+                        stroke="var(--color-primary)" stroke-width="4" stroke-linecap="round"/>
+                  <path d="M20 148 H300" stroke="var(--color-divider)" stroke-width="2"/>
+                  <circle cx="100" cy="116" r="5" fill="var(--color-primary)"/>
+                  <circle cx="176" cy="101" r="5" fill="var(--color-primary)"/>
+                  <circle cx="256" cy="65"  r="5" fill="var(--color-primary)"/>
+                </svg>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">Crop monitoring · vegetation metrics</div>
+              <h3>Tracking sugarcane condition through spectral indicators</h3>
+              <p>Explored NDVI and related metrics to monitor crop vigor and temporal change,
+                 supporting field interpretation and downstream forecasting.</p>
+              <div class="project-tags">
+                <span>NDVI</span><span>Phenology</span><span>Sentinel-2</span><span>Visualization</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-visual" aria-hidden="true">
+              <div class="mini-grid"></div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">Land cover · classification</div>
+              <h3>Random Forest land-cover classification across Mozambican study areas</h3>
+              <p>Developed classification workflows and evaluation routines for multiple sites
+                 including Catandica, Xai-Xai, Chokwe, and Gorongosa.</p>
+              <div class="project-tags">
+                <span>Random Forest</span><span>Land cover</span><span>Accuracy</span><span>terra/sf</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-visual" aria-hidden="true">
+              <div class="mini-series">
+                <svg viewBox="0 0 320 180" fill="none">
+                  <rect x="20" y="30" width="280" height="118" rx="16"
+                        fill="var(--color-surface-2)" stroke="var(--color-divider)"/>
+                  <path d="M45 119 L85 90 L125 108 L165 74 L205 85 L245 58 L285 68"
+                        stroke="#7ba66f" stroke-width="4" stroke-linecap="round"/>
+                  <path d="M45 130 L85 121 L125 96 L165 102 L205 87 L245 77 L285 44"
+                        stroke="var(--color-primary)" stroke-width="4" stroke-linecap="round"/>
+                  <path d="M45 141 L85 136 L125 130 L165 124 L205 118 L245 114 L285 110"
+                        stroke="#c7aa67" stroke-width="4" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">Applied agronomy · decision support</div>
+              <h3>Geospatial evidence for fertilization and crop management questions</h3>
+              <p>Supported applied agricultural analysis with data processing, interpretation,
+                 and technical reporting relevant to production systems in Sub-Saharan Africa.</p>
+              <div class="project-tags">
+                <span>Agronomy</span><span>Decision support</span><span>Reporting</span><span>Applied research</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- WRITING -->
+    <section class="section" id="writing">
+      <div class="container writing-grid">
+
+        <div class="writing-card reveal">
+          <span class="eyebrow">Writing and outputs</span>
+          <h3>Research communication matters as much as analysis.</h3>
+          <p>
+            This section is ready for thesis chapters, technical notes, dashboards, or
+            portfolio PDFs. Replace placeholder items with your actual report titles
+            and repository links.
+          </p>
+          <ul class="writing-list">
+            <li>
+              <strong>Thesis chapter or project report</strong>
+              <span>Methodology, workflow design, and reproducible analysis notes.</span>
+            </li>
+            <li>
+              <strong>GitHub repositories</strong>
+              <span>Well-structured code for processing, modeling, and visualization.</span>
+            </li>
+            <li>
+              <strong>Maps and figures</strong>
+              <span>Exported visuals from QGIS, R, or GEE for use in publications and presentations.</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="contact-panel reveal">
+          <span class="eyebrow">Positioning</span>
+          <h2>What this portfolio signals</h2>
+          <p>
+            It presents you as a technically strong, research-oriented geospatial analyst
+            with a clear domain focus, not as a generic developer. That distinction is valuable.
+          </p>
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container contact-grid">
+
+        <article class="contact-panel reveal">
+          <span class="eyebrow">Contact</span>
+          <h2>Open to research, collaboration, and technical geospatial work.</h2>
+          <p>
+            Update the links below with your real profiles and email before publishing.
+            The site is already structured for GitHub Pages.
+          </p>
+          <div class="socials">
+            <a class="social-link" href="mailto:yourname@email.com">
+              <span><i data-lucide="mail"></i>Email</span>
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+            <a class="social-link" href="https://github.com/yourusername"
+               target="_blank" rel="noopener noreferrer">
+              <span><i data-lucide="github"></i>GitHub</span>
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+            <a class="social-link" href="https://www.linkedin.com/"
+               target="_blank" rel="noopener noreferrer">
+              <span><i data-lucide="linkedin"></i>LinkedIn</span>
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <aside class="writing-card reveal">
+          <span class="eyebrow">GitHub Pages</span>
+          <h3>How to publish</h3>
+          <ul class="writing-list">
+            <li>
+              <strong>1. Create a repository</strong>
+              <span>Name it <code>yourusername.github.io</code> or simply <code>portfolio</code>.</span>
+            </li>
+            <li>
+              <strong>2. Upload these three files</strong>
+              <span>Upload <code>index.html</code>, <code>style.css</code>, and <code>script.js</code> to the repository root.</span>
+            </li>
+            <li>
+              <strong>3. Enable GitHub Pages</strong>
+              <span>In repository settings, set Pages source to the main branch root.</span>
+            </li>
+          </ul>
+        </aside>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>Built as a static portfolio for GitHub Pages. Personalize the text, links, and project details, then publish.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
