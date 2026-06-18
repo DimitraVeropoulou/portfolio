@@ -274,7 +274,7 @@ ul { list-style: none; }
 }
 
 .hero-copy h1 {
-  font-size: var(--text-hero);
+  font-size: clamp(2.8rem, 5vw, 5rem);
   margin-top: var(--space-4);
   max-width: 10ch;
 }
