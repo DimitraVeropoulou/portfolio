@@ -6,7 +6,7 @@
   const themeToggle = document.querySelector('[data-theme-toggle]');
 
   // Detect system preference on first load
-  let theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  let theme = root.getAttribute('data-theme') || 'dark';
 
   function renderThemeIcon(current) {
     if (!themeToggle) return;

@@ -122,11 +122,15 @@ body {
   font-family: var(--font-body);
   font-size: var(--text-base);
   color: var(--color-text);
+  background: var(--color-bg);
+}
+
+[data-theme="dark"] body {
   background:
-  radial-gradient(circle at 20% 20%, rgba(245, 197, 66, 0.12), transparent 25%),
-  radial-gradient(circle at 80% 10%, rgba(93, 173, 226, 0.14), transparent 28%),
-  radial-gradient(circle at 50% 80%, rgba(111, 66, 245, 0.10), transparent 30%),
-  #050711;
+    radial-gradient(circle at 20% 20%, rgba(245,197,66,.12), transparent 25%),
+    radial-gradient(circle at 80% 10%, rgba(93,173,226,.14), transparent 28%),
+    radial-gradient(circle at 50% 80%, rgba(111,66,245,.10), transparent 30%),
+    var(--color-bg);
 }
 
 body::before {
@@ -156,6 +160,10 @@ body::before {
   opacity: .35;
 
   z-index: -1;
+}
+
+[data-theme="light"] body::before {
+  display: none;
 }
 
 img, svg { display: block; max-width: 100%; height: auto; }
