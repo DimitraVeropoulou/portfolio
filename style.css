@@ -29,23 +29,29 @@
   --space-32: 8rem;
 
   /* Colors — light */
-  --color-bg: #050711;
-  --color-surface: #0b1020;
-  --color-surface-2: #111827;
-  --color-surface-offset: #1a2238;
-  --color-surface-dynamic: #24304d;
-  --color-divider: #2d3655;
-  --color-border: #384569;
+  --color-bg: #f7f4eb;
+  --color-surface: #fcfbf8;
+  --color-surface-2: #f1ece1;
+  --color-surface-offset: #ebe4d6;
+  --color-surface-dynamic: #e1d7c6;
 
-  --color-text: #f5f7ff;
-  --color-text-muted: #b8c2d9;
-  --color-text-faint: #7d879d;
-  --color-text-inverse: #050711;
+  --color-divider: #d8cfbc;
+  --color-border: #cbc0a8;
 
-  --color-primary: #f5c542;
-  --color-primary-hover: #ffd86b;
-  --color-primary-active: #ffe08a;
-  --color-primary-highlight: #2a2411;
+  --color-text: #1f1f1f;
+  --color-text-muted: #565c64;
+  --color-text-faint: #888f99;
+  --color-text-inverse: #ffffff;
+
+ /* warm lightsaber gold */
+  --color-primary: #cfa63b;
+  --color-primary-hover: #b18a2f;
+  --color-primary-active: #987323;
+  --color-primary-highlight: #f4e7b5;
+
+  --shadow-sm: 0 2px 6px rgba(0,0,0,0.04);
+  --shadow-md: 0 8px 24px rgba(0,0,0,0.08);
+  --shadow-lg: 0 18px 45px rgba(0,0,0,0.10);
 
   /* Radius */
   --radius-sm:   0.375rem;
@@ -68,24 +74,26 @@
    DESIGN TOKENS — Dark mode
    ============================================================ */
 [data-theme="dark"] {
-  --color-bg:              #141715;
-  --color-surface:         #1a1d1b;
-  --color-surface-2:       #202422;
-  --color-surface-offset:  #262b28;
-  --color-surface-dynamic: #303532;
-  --color-divider:         #313632;
-  --color-border:          #3b433f;
-  --color-text:            #e6e4de;
-  --color-text-muted:      #adb3ab;
-  --color-text-faint:      #7f877f;
-  --color-text-inverse:    #101311;
-  --color-primary:         #63a8a0;
-  --color-primary-hover:   #7eb9b1;
-  --color-primary-active:  #8bc8bf;
-  --color-primary-highlight: #283330;
-  --shadow-sm: 0 1px 2px oklch(0 0 0 / 0.2);
-  --shadow-md: 0 8px 24px oklch(0 0 0 / 0.25);
-  --shadow-lg: 0 18px 45px oklch(0 0 0 / 0.38);
+  --color-bg: #050711;
+
+  --color-surface: #0b1020;
+  --color-surface-2: #111827;
+  --color-surface-offset: #182138;
+  --color-surface-dynamic: #26324f;
+
+  --color-divider: #2f3958;
+  --color-border: #445172;
+
+  --color-text: #f5f7ff;
+  --color-text-muted: #b8c2d9;
+  --color-text-faint: #7d879d;
+  --color-text-inverse: #050711;
+
+  --color-primary: #f5c542;
+  --color-primary-hover: #ffd86b;
+  --color-primary-active: #ffe08a;
+  --color-primary-highlight: #2a2411;
+
 }
 
 /* ============================================================
@@ -123,15 +131,30 @@ body {
 
 body::before {
   content: "";
+
   position: fixed;
   inset: 0;
+
   pointer-events: none;
-  background-image:
-    radial-gradient(circle, rgba(255,255,255,0.9) 1px, transparent 1px),
-    radial-gradient(circle, rgba(255,255,255,0.45) 1px, transparent 1px);
-  background-size: 90px 90px, 140px 140px;
-  background-position: 0 0, 40px 60px;
-  opacity: 0.25;
+
+  background:
+
+  radial-gradient(circle at 3% 17%, rgba(255,255,255,.9) 1px, transparent 2px),
+  radial-gradient(circle at 15% 62%, rgba(255,255,255,.55) 2px, transparent 3px),
+  radial-gradient(circle at 27% 11%, rgba(255,255,255,.85) .8px, transparent 2px),
+  radial-gradient(circle at 41% 80%, rgba(255,255,255,.45) 1.6px, transparent 3px),
+  radial-gradient(circle at 58% 23%, rgba(255,255,255,.9) 2px, transparent 4px),
+  radial-gradient(circle at 72% 51%, rgba(255,255,255,.4) .8px, transparent 2px),
+  radial-gradient(circle at 88% 18%, rgba(255,255,255,.8) 1.5px, transparent 3px),
+  radial-gradient(circle at 94% 74%, rgba(255,255,255,.6) 2px, transparent 4px),
+
+  radial-gradient(circle at 10% 90%, rgba(255,255,255,.4) .8px, transparent 2px),
+  radial-gradient(circle at 36% 46%, rgba(255,255,255,.7) 1.5px, transparent 3px),
+  radial-gradient(circle at 61% 67%, rgba(255,255,255,.95) 2px, transparent 4px),
+  radial-gradient(circle at 83% 88%, rgba(255,255,255,.45) 1px, transparent 2px);
+
+  opacity: .35;
+
   z-index: -1;
 }
 
